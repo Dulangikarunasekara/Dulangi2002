@@ -1,0 +1,475 @@
+.text h1{
+    font-family: open sans;
+    color: white;
+    margin-top: -30%;
+    text-align: center;
+    position: static;
+    font-size: xx-large;
+}
+
+
+
+
+
+.text p{
+    position:relative;
+    color: white;
+}
+
+
+
+
+
+#intro{
+ color:black;
+ padding-top: 40%;
+ font-family: open sans;
+ font-weight: bolder;
+ width:60%;
+ margin-left: 20%;
+ text-align: center;
+ margin-top: -5%;
+ font-size: xx-large;
+}
+
+
+#container11{
+    margin-top: 10%;
+
+}
+
+#container11{
+    grid-template-columns: 100%;
+    display: grid;
+}
+
+
+#OO{
+    font-family: open sans;
+    text-align: justify;
+    font-weight: bold;
+    padding: 10%;
+}
+
+#OO h1{
+    color: darkred;
+}
+
+#PP{
+    overflow: scroll;
+    width: 500px;
+    height: 400px;
+    margin-left: 10%;
+}
+
+#PP::-webkit-scrollbar{
+    display: none;
+}
+
+
+#TT{
+    overflow: scroll;
+    width: 500px;
+    height: 400px;
+    margin-left:50%;
+    margin-top: -31.5%;
+}
+
+#TT::-webkit-scrollbar{
+    display: none;
+}
+
+
+#QQ{
+    font-family: open sans;
+    text-align: justify;
+    font-weight: bold;
+    padding: 10%;
+}
+
+
+
+#SS{
+    overflow: scroll;
+    width: 500px;
+    height: 300px;
+    margin-left:30%;
+    overflow: scroll;
+    margin-bottom: 10%;
+}
+    
+#SS::-webkit-scrollbar{
+        display: none;
+    }
+    
+
+ #RR{
+    font-family: open sans;
+    text-align: justify;
+    font-weight: bold;
+    padding: 10%;
+ }   
+
+
+ footer img{
+    width: 20px;
+    
+}
+
+footer{
+    background-color:white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer a {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    
+}
+
+
+
+#headerimg{
+    height: 700px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#gridcontainer11{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.05fr 1fr 1fr 1fr;
+    grid-template-areas:  "content7 content7"
+                          "content1 content2"
+                          "content3 content4"
+                          "content5  content6" ;
+    display: grid;   
+    margin-top: 20%;                 
+
+}
+
+#gridcontainer11 h1{
+   margin-top: 10%;
+}
+
+#intro{
+    grid-area: content7;
+    display: grid;
+    text-align: center;
+    padding-top: 10;
+}
+
+
+#OO{
+    grid-area: content1;
+    display: grid;
+    background-color:white;
+    border: 2px solid black;
+    padding: -5%;
+    width: 100%;
+    border-right: none;
+    border-top-left-radius: 10%;
+    border-bottom: none;
+    border-left: none;
+    
+
+}
+
+#OO p{
+    padding: 10%;
+    font-family:serif;
+    font-size: large;
+    
+    
+
+  
+}
+
+#OO h1,#QQ h1,#RR h1{
+    color: #05386b;
+    font-size: xx-large;
+    font-style: italic;
+    padding-top: 5%;
+
+}
+
+
+#PP img {
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    background-color: white;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+
+    
+}
+
+#PP{
+    grid-area: content2;
+    display: grid;
+    height: 800px;
+    overflow: scroll;
+    border-top-right-radius: 10%;
+    border: 2px solid black;
+    border-left: none;
+    border-bottom: none;
+}
+
+#PP::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+#QQ{
+    grid-area: content3;
+    display: grid;
+    background-color:white;
+}
+
+#QQ p{
+  
+    font-family:open sans;
+    font-size: large;
+    padding: 10%;
+    font-family:serif;
+    font-size: large;
+    
+   }
+
+#RR{
+
+    display: grid;
+    grid-area: content5;
+    margin-top: -20%;
+   
+
+}
+
+#RR p{
+    padding: 10%;
+    font-family: open sans;
+    font-size: large;
+}
+
+#RR h1{
+    margin-bottom: -40%;
+}
+
+
+
+#TT{
+    grid-area: content4;
+    display: grid;
+    height: 500px;
+    overflow: scroll;
+    margin-top: 10%;
+}
+
+#TT::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+
+
+#TT img{
+    width: 100%;
+    display: grid;
+    height: 100%;
+    padding: 10%;
+}
+
+#SS{
+   grid-area: content6;
+   display: grid;
+   height: 500px;
+   overflow: scroll;
+   margin-top: 5%;
+
+}
+
+#SS::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+#SS img{
+    width: 100%;
+    display: grid;
+    height: 100%;
+    padding: 10%;
+    
+}
+
+#intro p{
+    font-family: monospace;
+    font-size: x-large;
+    text-align: center;
+    font-style: italic;
+}
+
+
+
+
+footer img{
+    width: 20px;
+    
+}
+
+footer{
+    background-color:white;
+    text-align: center;
+    font-family:open sans;
+}
+
+footer a {
+    color: black;
+    font-family:open sans;
+    text-decoration: none;
+    
+
+}
+
+
+
+
+
+
+.text{
+   
+    margin-top: -40%;
+    text-align: center;
+    color: white;
+      
+}
+
+#intro p{
+    color: white;
+    text-align: justify;
+}
+
+.banner img{
+    height: 100%;
+}
+
+
+
+
+    
+    
+    
+@media only screen and (max-width:500px){
+#gridcontainer11{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "content1"
+                         "content2"
+                         "content3"
+                         "content4"
+                         "content5"
+                         "content6";
+
+    grid-template-rows: repeat(6,1fr);
+    row-gap: 5%;
+   
+    #OO{
+        grid-area: content1;
+        display:grid;
+        margin:0%;
+        border-radius:0%;
+    }
+
+    #OO{
+        margin: 0%;
+        padding-left: 0%;
+    }
+
+    #PP{
+        grid-area: content2;
+        display: grid;
+    }
+
+    #QQ{
+        grid-area: content3;
+        display: grid;
+    }
+
+    #TT{
+        grid-area: content4;
+        display: grid;
+    }
+
+    #RR{
+        grid-area: content5;
+        display: grid;
+    }
+
+    #SS{
+        grid-area: content6;
+        display: grid;
+    }
+}
+
+
+
+
+}
+
+*/
+
+
+
+ 
+ 
+ 
+
+     
+    
+ 
+  
+  
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+

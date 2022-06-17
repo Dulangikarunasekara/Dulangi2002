@@ -1,0 +1,458 @@
+#gridcontainer20{
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr 2fr ;
+    grid-template-areas: "content1 content2 content3"
+                         "content4  content5 content6"
+                          "content7 content8 content9"
+                          "content10 content10 content10";
+
+     row-gap: 2px;   
+     margin-top: 30%;                  
+}
+
+#L1{
+    grid-area: content1;
+    display: grid;
+    background-color:#AFA7B2;
+    border-radius: 5%;
+    margin: 5%;
+}
+
+#L1 , #L2 , #L3 p{
+    text-align: center;
+    color: black;
+    font-family: monospace;
+    font-size:xx-large;
+    padding-top: 40%;
+
+}
+
+#L3 a{
+    color: black;
+    text-align: center;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+#L2 a{
+    color: black;
+    text-align: center;
+    font-family: monospace;
+    font-size: x-large;
+}
+#L1 a{
+    color: black;
+    text-align: center;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+
+
+#L2{
+    grid-area: content2;
+    display: grid;
+    background-color: #D2BEBF;
+    border-radius: 5%;
+   margin: 5%;
+
+}
+
+
+
+#L3{
+    grid-area: content3;
+    display: grid;
+    background-color: #F5E7E4;
+    border-radius: 5%;
+    margin: 5%;
+}
+
+#L4{
+    grid-area: content4;
+    display: grid;
+    margin: 5%;
+   
+    
+    
+}
+ 
+#L5{
+    grid-area: content5;
+    display: grid;
+    margin: 5%;
+   
+}
+
+#L6{
+    grid-area: content6;
+    display: grid;
+    margin: 5%;
+    
+}
+
+#L7{
+    grid-area: content7;
+    display: grid;
+    background-color:white;
+    
+    border: black 2px solid;
+    margin: 5%;
+    
+   
+}
+
+#L7 , #L8 ,#L9 a{
+    color: black;
+    font-size: x-large;
+    font-family:monospace;
+    text-align: center;
+    padding-top: 20%;
+}
+
+#L8 a{
+    color: black;
+}
+
+#L7 a{
+    color: black;
+}
+
+
+#L8{
+    grid-area: content8;
+    display: grid;
+    background-color: white;
+    
+    border: black 2px solid;
+    margin: 5%;
+}
+
+#L9{
+    grid-area: content9;
+    display: grid;
+    background-color: white;
+    
+    border: black 2px solid;
+    margin: 5%;
+}
+
+
+
+#form{
+    grid-area: content10;
+    display: grid;
+    background-color: azure;
+    
+}
+
+
+#L6 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+   
+}
+
+
+#L5 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+#L4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+   
+}
+
+
+
+#form{
+   align-self: center;
+}
+
+h1{
+    font-family: monospace;
+    font-size: 60px;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width:900px){
+    #gridcontainer20{
+       grid-template-columns:1fr 1fr;
+       display: grid;
+       grid-template-rows: 1fr 1fr;
+       grid-template-areas: "content1 content1"
+                            "content2 content2"
+                             "content3 content3"
+                             "content4 content7"
+                             "content5  content8"
+                             "content6 content9"
+                            "content10 content10";
+    }
+
+    #L1{
+        grid-area: content1;
+        display: grid;
+        background-color:#97CAEF;
+    }
+    
+    #L1 , #L2 , #L3 p{
+        text-align: center;
+        color: black;
+        font-family: monospace;
+        font-size:x-large;
+         padding-top: 20%;
+    }
+    
+    #L3 a{
+        color: black;
+        text-align: center;
+        font-family: monospace;
+        font-size: x-large;
+    }
+    
+    #L2 a{
+        color: black;
+        text-align: center;
+        font-family: monospace;
+        font-size: x-large;
+    }
+    #L1 a{
+        color: black;
+        text-align: center;
+        font-family: monospace;
+        font-size: x-large;
+    }
+    
+    
+    
+    #L2{
+        grid-area: content2;
+        display: grid;
+        background-color: whitesmoke;
+    }
+    
+    #L3{
+        grid-area: content3;
+        display: grid;
+        background-color: #97CAEF;
+    }
+    
+    #L4{
+        grid-area: content4;
+        display: grid;
+       
+    }
+    
+    #L5{
+        grid-area: content5;
+        display: grid;
+     
+    }
+    
+    #L6{
+        grid-area: content6;
+        display: grid;
+       
+    }
+    
+    #L7{
+        grid-area: content7;
+        display: grid;
+        background-color:white;
+        border-radius: 0%;
+    }
+    
+    #L7 , #L8 ,#L9 a{
+        color: black;
+        font-size: x-large;
+        font-family:monospace;
+        text-align: center;
+        padding-top: 20%;
+    }
+    
+    #L8 a{
+        color: black;
+    }
+    
+    #L7 a{
+        color: black;
+    }
+    
+    
+    #L8{
+        grid-area: content8;
+        display: grid;
+        background-color:white;
+        border-radius: 0%;
+    }
+    
+    #L9{
+        grid-area: content9;
+        display: grid;
+        background-color: white;
+        border-radius: 0%;
+    }
+    
+    
+    
+    #form{
+        grid-area: content10;
+        display: grid;
+        background-color: white;
+        
+    }
+    
+    
+    #L6 img{
+        width: 100%;
+        height: 100%;
+        /*padding: 20%;*/
+
+    }
+    
+    
+    #L5 img{
+        width: 100%;
+        height: 100%;
+        /*padding: 20%;*/
+    }
+    
+    #L4 img{
+        width: 100%;
+        height: 100%;
+        /*padding: 20%;*/
+    }
+    
+    
+    
+  
+    
+
+   
+}
+
+
+#banner img{
+    width: 100%;
+    height: 600px;
+}
+
+
+
+
+
+#text h1 {
+    margin-top: -30%; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: white;
+    position:sticky;
+    margin-left: -70%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#gridcontainer20 p{
+    text-align: center;
+}
+
+
+footer img{
+    width: 20px;
+    
+}
+
+footer{
+    background-color:white;
+    text-align: center;
+}
+
+footer a {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    
+}
+
+
+#L3 .dicon img {
+    position: absolute;
+    margin-top: 50%;
+}
+
+
+#form{
+    
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    margin-left: 35%;
+}
+
+.label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#form h2{
+    text-align: center;
+}
+
+
+#reset{
+    display: block;
+    background-color:#AFA7B2;
+     width: 100px;
+     height: 50px;
+     margin-left: 30%;
+}
+
+#submit{
+    display: block;
+    background-color: white;
+    border: black 2%;
+    width: 100px;
+    height: 50px;
+    margin-left: 30%;
+}
+
+@media only screen and (max-width:900px){
+    #form{
+        margin-left: 20%;
+        margin-bottom: 5%;
+        
+    }
+
+}
+    
+
+
+#banner img{
+    width: 100%;
+    height: 600px;
+    
+}
+
+#text h1{
+    color: black;
+    font-family: open sans;
+    font-size: 70px;
+}
