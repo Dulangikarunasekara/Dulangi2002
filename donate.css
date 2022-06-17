@@ -308,6 +308,7 @@ h1{
         display: grid;
         background-color: white;
         
+        
     }
     
     
@@ -349,7 +350,7 @@ h1{
 
 
 
-#text h1 {
+#text h1{
     margin-top: -30%; 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: xx-large;
