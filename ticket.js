@@ -372,7 +372,7 @@ function checktype(){
   
 
 
-
+/*
 
 function checkduration(){
     if( ticketchoices.value == "local-adult" && durationchoice.value == "half-a-day"){
@@ -411,16 +411,58 @@ function checkduration(){
         console.log(durationcost)
         document.getElementById("updateduration").innerText = durationchoice.value;
     }else{
-        durationcost = 0.00
+        durationcost = 0.00;
         document.getElementById("updateduration").innerText = durationchoice.value;
     }
         
-    }    
+    }    */
 
 
 
 
 
+    function checkduration(){
+        if( ticketchoices.value == "local-adult" && durationchoice.value == "half-a-day"){
+            durationcost =  250.00;
+            console.log(durationcost);
+            document.getElementById("updateduration").innerText = durationchoice.value;
+        }else if( ticketchoices.value == "Foreign-adult" && durationchoice.value == "half-a-day"){
+            durationcost = 500.00;
+            console.log(durationcost);
+            document.getElementById("updateduration").innerText = durationchoice.value;
+    
+        }else if(ticketchoices.value == "Local-child" && durationchoice.value == "half-a-day"){
+            durationcost = 250.00;
+            console.log(durationcost);
+            document.getElementById("updateduration").innerText = durationchoice.value;
+        }else if(ticketchoices.value == "Foreign-child" && durationchoice.value == "half-a-day"){
+            durationcost = 500.00;
+            console.log(durationcost);
+            document.getElementById("updateduration").innerText = durationchoice.value;    
+    
+        }else if(ticketchoices.value == "local-adult" && durationchoice.value == "one-day"){
+            durationcost = 500.00;
+            console.log(durationcost);
+            document.getElementById("updateduration").innerText = durationchoice.value;
+    
+        }else if(ticketchoices.value == "Local-child" && durationchoice.value == "one-day"){
+            durationcost = 500.00;
+            console.log(durationcost)
+            document.getElementById("updateduration").innerText = durationchoice.value;
+        }else if(ticketchoices.value == "Foreign-adult" && durationchoice.value == "one-day"){
+            durationcost = 1000.00;
+            console.log(durationcost);
+            document.getElementById("updateduration").innerText = durationchoice.value;
+        }else if(ticketchoices.value == "Foreign-child" && durationchoice.value == "one-day"){
+            durationcost = 1000.00;
+            console.log(durationcost)
+            document.getElementById("updateduration").innerText = durationchoice.value;
+        }else{
+            durationcost = 0.00;
+            document.getElementById("updateduration").innerText = durationchoice.value;
+        }
+            
+        }
 
 
 
