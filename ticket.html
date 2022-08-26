@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"  initial-scale=1">
+  <meta name="description" content="website about sri lanka">
+  
+  
+  <link rel="stylesheet" href="ticket.css">
+
+
+</head>
+
+
+<body>
+
+
+
+
+<form action="" id="form">
+  <h2>TICKET BOOKING PLATFORM</h2>
+  <p id="paragraph">Entrance is free for children under 3</p>
+
+       
+
+        <!--<input type="checkbox" name="ticket" id="local-adult" value="local-adult">Local adult
+        <input type="checkbox" name="ticket" id="Foreign-adult" value="Foreign-adult">Foreign-adult
+        <input type="checkbox" name="ticket" id="Local-child" value="Local-child">Local-child
+        <input type="checkbox" name="ticket" id="Foreign-child" value="Foreign-child">Foreign-child
+        <input type="checkbox" name="ticket" id="Annual-local" value="Annual-local">Annual pass local
+        <input type="checkbox" name="ticket" id="Annual-Foreign" value="Annual-Foreign">Annual pass foreign-->
+<label for="">Choose your ticket type</label>
+<select name="" id="ticket">
+  <option value="" id="blank"></option>
+
+  <option value="local-adult" id="local-adult">Local adult</option>
+  <option value="Foreign-adult" id="Foreign-adult">Foreign adult</option>
+  <option value="Local-child" id="Local-child">Local child</option>
+  <option value="Foreign-child" id="Foreign-child">Foreign child</option>
+  <option value="Annual-local" id="Annual-local">Annual pass local</option>
+  <option value="Annual-Foreign" id="Annual-Foreign">Annual pass foreign</option>
+</select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<div id="d">
+
+       <!---<input type="checkbox" name="duration" id="three-hours" value="three-hours">Three-hours
+        <input type="checkbox" name="duration" id="half-a-day" value="half-a-day">half-a-day
+        <input type="checkbox" name="duration" id="one-day" value="one-day">one-day
+        <input type="checkbox" name="duration" id="two-days" value="two-days">two-days-->
+<label for="">Duration </label>
+
+        <select name="" id="duration">
+          <option value="" id="blanktwo"></option>
+          <option value="three-hours">3 Three hours</option>
+          <option value="half-a-day">half a day</option>
+          <option value="one-day">One day</option>
+          <option value="two-days">two days</option>
+        </select>
+
+</div>
+
+<hr>
+
+
+
+
+     
+<label for="">Input number of tickets</label>
+<input type="number" name="quantity" id="quantity-tickets" min="1" value="">
+
+
+
+
+<label for="">number of food tokens</label>
+<input type="number" id="foodtokenquantity" value="" min="1">
+
+
+
+
+<table id="table">
+  
+  <tr>
+    <th>type</th>
+    <th>duration</th>
+    <th>quantity</th>
+    <th>price of the current order</th>
+  </tr>
+
+  <tr id="row">
+    <td id="updatetype"></td>
+    <td id="updateduration"></td>
+    <td id="updatequantity"> </td>
+    <td id="updateprice"></td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+<button id="add-to-cart">Add to order</button>     
+<button id="addtofavourites">Add to favourites</button>
+<button id="orderfavourite">order favourites</button>
+
+<h2>Purchase summary</h2>
+
+<p id="cart"></p>
+<!---
+<p id="total-quantity">
+  <h1>total quantity</h1>
+</p>
+-->
+<table id="overallorder">
+
+  <th>qauntity</th>
+  <th>type</th>
+  <th >duration</th>
+  <th>Price</th>
+  <tr>
+    <td id="quantity2"></td>
+    <td id="type2"></td>
+    <td id="duraton2"></td>
+    <td id="price2"></td>
+  </tr>
+
+</table>
+
+
+<table>
+
+  <tr><td>total quantity</td>
+  <td id="overallquantity" colspan="3"></td>
+  </tr>
+  <tr>
+    <td>overall cost of your cart</td>
+    <td id="overallcost"></td>
+  </tr>
+</table>
+
+<p id="food">
+
+</p>
+
+
+<div id="popup">
+  <p>Thank you for your purchase</p>
+  <button id="okbtn">OK</button>
+</div>
+
+
+<table id="foodtokentable">
+  <th>number of food tokens</th>
+  <th>Price of the food tokens</th>
+  <th>overall cost including the food tokens</th>
+  <tr>
+  <td id="purchasedfoodtokenquantity"></td>
+  <td id="priceofthepurchasedfoodtokens"></td>
+  <td id="overallcostincludingfoodtokens"></td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<button id="purchase">Purchase your items</button>
+
+<!--<button id="addtofavourites">Add to favourites</button>-->
+<!--<button id="orderfavourite">order favourites</button>-->
+<button id="checkloyalty">Check loyalty points</button>
+<p id="loyalty-display">Your loyalty points :</p>
+
+
+
+
+
+
+    </form>
+
+
+
+
+    <script src="ticket.js"></script>
+</body>
+
+
+</html>
