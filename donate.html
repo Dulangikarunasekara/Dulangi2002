@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="hee.css">
   <link rel="stylesheet" href="donate.css">
+  <link rel="stylesheet" href="popup.css">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -85,54 +86,397 @@
         <div id="L8"><a href="#">Tea leaves 1Kg<br>Rs.2100</a></div>
         <div id="L9"><a href="#">Traditional raksha mask <br>purchase item<br>Rs.1000</a></div>
             
-       <div id="form">
-        <form id="form">
-        <fieldset>
-         <h2>sign up</h2>
-          <label class="label">First name:</label>
-          <input type="text" name="fname" maxlength="55" required><br><br>
-         <label class="label">Last name:</label>&nbsp;
-         <input type="text" id="lname" name="lname"><br><br>
-          <label class="label">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <input type="email" id="email" name="email"><br><br>
-          <label class="label">password:</label> &nbsp; 
-          <input type="password" id="password" name="password" value="sendinfo"><br><br>
-         <label class="label"><font color="black">Gender:</font></label>
-          Male&nbsp;&nbsp;<input type="radio" name="Mgen">
-          Female&nbsp;&nbsp;<input type="radio" name="Mgen"><br><br>
-          <label class="label">Country:</label>&nbsp; &nbsp; &nbsp;
-          <select name="list" size="1">
-            <option>Sri lanka</option>
-            <option>India</option>
-            <option>China</option>
-            <option>United states of america</option>
-            <option>UK</option>
-          </select><br><br>
-    <label class="label">dateofbirth:</label>
-    <input type="date" name="dateofbirth"><br><br><br><br><br>
-    <input type="reset" name="resetname" value="clear" id="reset"><br>
-    <input type="submit" value="submit" name="submit" id="submit">
-        </fieldset>
-      </form>
-    </div>  
+    </div>   
+
+    <a href="donateform.html" class="linktodonate">Click to access the donation form</a>
+
+
+     <!----<div class="form-container">
+
+          <div class="title">Make a Donation</div>
+  
+          <form id="form">
+            <div class="user-details">
+                <div class="input-box">
+                <span class="details">First name</span>
+                <input type="text" name="first" id="first" placeholder="First name" required class="">
+                <div class="error-hint">required</div>
+
+                </div>
+            </div>
+        
+            <div class="user-details">
+              <div class="input-box">
+              <span class="details">last name</span>
+              <input type="text" name="last" id="last" placeholder="last name" required>
+              </div>
+          </div>
+            
+           
+  
+          
+          <div class="user-details">
+              <div class="input-box">
+              <span class="details">Email</span>
+              <input type="text" name="email" id="email" placeholder="Enter your email" required>
+              </div>
+          </div>
+  
+        
+  
+  
+         
+         
+            <div class="donation-amount">
+              <span class="donation">Choose amount to donate</span>
+              <div class="category">
+                
+  
+  
+                <label for="amount2">
+                <input type="radio" name="amount2" id="amount2">
+                <span class="amount2">250</span>
+                </label>
+  
+  
+                
+                <label for="amount2">
+                  <input type="radio" name="amount2" id="amount2">
+                  <span class="amount2">500</span>
+                  </label>
+  
+                  
+                <label for="amount2">
+                  <input type="radio" name="amount2" id="amount2">
+                  <span class="amount2">1000</span>
+                  </label>
+  
+  
+                  <label for="amount2">
+                      <input type="radio" name="amount2" id="amount2">
+                      <span class="amount2">2500</span>
+                  </label>
+  
+  
+                  <label for="amount2">
+                      <input type="radio" name="amount2" id="amount2">
+                      <span class="amount2">5000</span>
+                  </label>
+  
+                  <label for="amount2">
+                      <input type="radio" name="amount2" id="amount2">
+                      <span class="amount2">10000</span>
+                  </label>
+              </div>
+          
+            </div>
+
+            <button onclick="showhidden()">Proceed</button>
+  
+            
+            <div class="payment-details">
+              <span class="payment-type">Payment method</span>
+              <div class="category">
+
+
+
+             
+  
+
+       
+  
+              </div>
+          
+            </div>
+  
+  
+             
+          <section id="hide" class="hidden-form">
+
+
+            
+                
+            <p>
+              <input type="radio" id="visa" name="card" value="visa">
+              <label for="visa">Visa</label> 
+            </p>
+
+
+            
+            <p>
+              <input type="radio" id="mastercard" name="card" value="mastercard">
+              <label for="mastercard">mastercard</label> 
+            </p>
+
+        
+        
+        
+  
+            <div class="user-details">
+                <div class="input-box">
+                <span class="details">Card name</span>
+                <input type="text" name="cname" id="cname" placeholder="card name" required>
+                </div>
+            </div>
+  
+        
+            <div class="user-details">
+                <div class="input-box">
+                <span class="details">card number</span>
+                <input type="text" name="num" id="num" placeholder="card number" required>
+                </div>
+            </div>
+  
+            <div class="user-details">
+                <div class="input-box">
+                <span class="details">Expiration date</span>
+                <input type="text" name="date" id="date" placeholder="exp date" required >
+                </div>
+            </div>
+  
+            <div class="user-details">
+                <div class="input-box">
+                <span class="details">cvc</span>
+                <input type="text" name="cvc" id="cvc" placeholder="cvc" required>
+                </div>
+            </div>
+  
+        
+      
+         <button onclick="togglePopup()" type="button" id="btn1">SUBMIT</button>
+          </section>
+        </article>
+  
+        
+   </form>
+  
+  
+</div>-->
+  
+           
+            
+        
+     
+        
+      
+        
+  <!--basic html for the popup message
+  
+  <article>
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn">&times;</div>
+        <h1> </h1>
+        <p id="output1" class="output">
+          
+        </p>
+      </div>
+     </div>
+  
+  
+  </article>
+  
+      </div>-->
+
+
+<!---
+
+
+    
+<form id="form">
+  <div class="form-group">
+    <label>First name</label>
+    <input type="text" placeholder="first name" class="" id="first-name">
+    <div class="error-hint hidden">Please fill</div>
+  </div>
+
+  <div class="form-group">
+    <label>last name</label>
+    <input type="text" placeholder="last name" class="" id="last-name">
+    <div class="error-hint hidden">Please fill</div>
+  </div>
+
+  
+  <div class="form-group">
+    <label>card-number</label>
+    <input type="number" placeholder="card-number" class="" id="card-number">
+    <div class="error-hint hidden">Please fill</div>
+  </div>
+
+  <div class="form-group" id="radio">
+	<p>
+		<input type="radio" id="visa" name="visa" value="visa">
+		<label for="visa">Visa</label> 
+	</p>
+
+  <p>
+		<input type="radio" id="mastercard" name="visa" value="visa">
+		<label for="visa">mastercard</label> 
+	</p>
+</div>
+
+
+<div class="form-group">
+  <label>Expiration date</label>
+  <input type="text" placeholder="Expiration date" class="" id="expdate">
+  <div class="error-hint hidden">Please fill</div>
+</div>
+
+<div class="form-group">
+  <label>CVV</label>
+  <input type="text" placeholder="cvv" class="" id="cvv">
+  <div class="error-hint hidden">Please fill</div>
+</div>
+
+
+-->
+ 
+<!---
+
+  <div class="form-group">
+    <label>card number</label>
+    <input type="number" placeholder="card-number" class="" id="card-number" required>
+    <div class="error-hint hidden">Please fill</div>
+  </div>
+
+
+  <div class="form-group">
+    <label>cvv</label>
+    <input type="number" placeholder="CVV" class="" id="card-number" required>
+    <div class="error-hint hidden">Please fill</div>
+  </div>
+
+
+  <div class="form-group">
+    <label>Expiration date</label>
+    <input type="number" placeholder="Expiration date" class="" id="Expiration-date">
+    <div class="error-hint hidden">Please fill</div>
+  </div>-->
+
+  
 
 
 
 
+<!---
 
 
 
 
-
-
-
-
-
-
-
-
-
+  <div class="popup center">
+    <div class="icon">
+        <i class="fa fa-check"></i>
     </div>
+    <div class="title">
+        Success
+    </div>
+    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, obcaecati.</div>
+    <div id="dismiss-btn">
+        <button id="dismiss-popup-btn">
+        Dismiss     </button>
+    </div>
+  </div>
+  
+  
+  <div class="center">
+    <button id="open-popup-btn">Submit</button>
+  </div>
+  
+  
+
+
+
+
+
+
+
+<button class="submit" id="open">submit</button>
+
+-->
+
+<!--<div id="popup">
+    <h1>Thank You!</h1>
+    <p id="msg"></p>
+  </div>
+</form>
+  
+   
+  
+<div class="popup" id="popup">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn">&times;</div>
+    <h1>Thank you</h1>
+  </div>
+</div>-->
+
+<!----
+<article>
+  <div class="popup" id="popup-1 hidden">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="close-btn">&times;</div>
+      <h1> </h1>
+      <p id="output1" class="output">
+        
+      </p>
+    </div>
+   </div>
+
+
+</article>
+
+<div class="thank-you">
+  <P>thank you</P>
+</div>-->
+
+<!---
+
+
+<div class="popup center">
+  <div class="icon">
+      <i class="fa fa-check"></i>
+  </div>
+  <div class="title">
+      Success
+  </div>
+  <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, obcaecati.</div>
+  <div id="dismiss-btn">
+      <button id="dismiss-popup-btn">
+      Dismiss     </button>
+  </div>
+</div>
+
+
+<div class="center">
+  <button id="open-popup-btn">Submit</button>
+</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---
+</form>-->
+
+
+
 
 </body>
 
