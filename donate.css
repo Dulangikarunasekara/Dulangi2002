@@ -404,9 +404,11 @@ footer a {
 #form{
     
     background-color: white;
-    width: 300px;
+  
     height: 500px;
     margin-left: 35%;
+    display: block;
+    margin: auto;
 }
 
 .label{
@@ -456,4 +458,461 @@ footer a {
     color: black;
     font-family: open sans;
     font-size: 70px;
+}
+
+/*
+.popup-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.popup-center{
+    width: 350px;
+    height: 280px;
+    padding: 30px 20px;
+    background: #97CAEF;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(0.5);
+    transition: opacity 300ms ease-in-out,
+    top 1000ms ease-in-out,
+    transform 1000ms ease-in-out;
+
+}
+
+.popup-center.active{
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 200ms cubic-bezier(0.18,0.89,0.43.1.19);
+
+
+}
+
+.popup-center .dismiss-btn button{
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+
+.popup-center > div{
+    position: relative
+    ;
+    top: 10px;
+    opacity: 0;
+}
+
+
+.popup-center.active > div{
+top: 0px;
+opacity: 1;
+}
+
+.popup-center .title{
+    transition: all 300ms ease-in-out 400ms;
+}
+
+.checkbox-container{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    
+}
+
+.checkbox-container .check{
+    width: 50px;
+    background-color: #97CAEF;
+    border-radius: 5px;
+    text-align: center;
+ 
+}
+
+#form{
+    width: 700px;
+    max-width: 80%;
+}
+
+#form h2{
+text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: large;
+
+}
+
+/*.form-container{
+    max-width: 700px;
+    width: 100%;
+    background-color: white;
+    padding: 10px 20px;
+   
+    border: 1px solid black;
+    box-sizing: border-box;
+
+}
+ form .form-container  .details
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box{
+    width: calc(100%/2-20px);
+   
+
+}
+
+
+form .user-details .input-box input{
+
+height: 45x;
+width: 100%;
+
+}*/
+
+/*
+.form-container{
+    max-width: 700px;
+    width: 100%;
+    background-color: white;
+    padding: 10px 20px;
+   
+    border: 1px solid black;
+    box-sizing: border-box;
+
+}
+
+
+.form-container form .user-details{
+
+
+   flex-wrap: wrap;
+   justify-content: space-between;
+   display: flex;
+   flex-direction: column;
+ 
+    
+
+}
+
+form .user-details .input-box{
+    width: calc(100% /2-20px);
+    padding: 10px;
+   
+
+}
+
+
+form .user-details .input-box input{
+
+height: 30px;
+width: 100%;
+
+}
+
+
+.details{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+.title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+    position:relative;
+    left: 0%;
+    bottom: 0%;
+    padding-left: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+    
+
+
+.payment-details .category{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    width: calc(100% /2-20px);
+    padding: 10px;
+   
+    
+
+}
+
+.payment-details .payment-type{
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    position:relative;
+    left: 0%;
+    bottom: 0%;
+    padding-left: 10px;
+    font-size:medium;
+    font-weight: bold;
+}
+
+.donation-amount .category{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+  
+
+    width: calc(100% /2-20px);
+    padding: 10px;
+
+}
+
+.donation-amount .donation{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    position:relative;
+    left: 0%;
+    bottom: 0%;
+    padding-left: 10px;
+    font-size:medium;
+    font-weight: bold;
+}
+
+
+
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0,0, 0, 0.7);
+    display:none;
+}
+
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+
+.popup .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: white;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 400;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+
+.popup.active .overlay{
+    display: block;
+
+
+}
+
+
+.popup.active .content{
+   transition: all 300ms ease-in-out;
+   transform: translate(-50%,-50%) scale(1);
+
+}
+
+/*
+#output1{
+    color: black;
+}
+*/
+
+/*
+#popup-1 .content{
+    border-radius: 10px;
+    background-color: #97CAEF;
+    text-align: center;
+    font-size: larger;
+    font-family:sans-serif;
+    font-weight: bold;
+    display: block;
+    padding-top: 10%;
+}
+*/
+/*
+input.invalid{
+    border: red 1px solid;
+}
+
+.error-hint{
+    color: red;
+    visibility: hidden;
+
+}
+
+.error-hint{
+    
+    visibility: hidden;
+
+}*/
+
+
+form{
+    padding: 10px;
+    border: 1px solid black;
+    font-family: monospace;
+    border-radius: 9px;
+   
+
+}
+
+.form-group label{
+    display: block;
+    font-size: larger;
+    margin-bottom: 5px;
+
+
+}
+
+.form-group input{
+    width: 300px;
+    padding: 5px;
+    font-size:smaller;
+    color: blueviolet;
+    margin-bottom: 2px;
+    border-radius: 10px;
+}
+
+input.invalid{
+    border: red 2px solid;
+
+}
+
+.error-hint{
+    color: red;
+}
+
+button{
+    padding: 5px;
+    font-size:small;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+  
+    
+    
+ 
+}
+
+button:hover{
+    background-color:purple;
+    color: powderblue;
+}
+
+
+
+
+.hidden{
+    display: none;
+}
+/*
+.thank-you{
+    padding: 40px;
+    font-size: 12px;
+    text-align:center ;
+}
+
+#popup{
+    border: 2px solid black;
+    width: fit-content;
+    display: none;
+}
+
+#msg{
+    font: size 20px;
+}
+
+
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background:#fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.popup .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background:#222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.popup.active .overlay{
+    display: block;
+
+}
+
+.popup.active .content{
+    transition: all 100ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+ 
+}
+
+*/
+
+.linktodonate{
+    color: rgb(68, 23, 23);
+    font-family: sans-serif;
+    font-size: 30px;
+    box-sizing: border-box;
+    align-content: center;
+  
 }
