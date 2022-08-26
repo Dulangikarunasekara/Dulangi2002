@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport"  initial-scale=1">
+  <meta name="viewport"  initial-scale="1" width="500px">
   <meta name="description" content="website about sri lanka">
   
   
   <link rel="stylesheet" href="ticket.css">
 
-
+<title>Book your tickets</title>
 </head>
 
 
@@ -17,7 +17,7 @@
 
 
 
-<form action="" id="form">
+<form id="form">
   <h2>TICKET BOOKING PLATFORM</h2>
   <p id="paragraph">Entrance is free for children under 3</p>
 
@@ -29,9 +29,9 @@
         <input type="checkbox" name="ticket" id="Foreign-child" value="Foreign-child">Foreign-child
         <input type="checkbox" name="ticket" id="Annual-local" value="Annual-local">Annual pass local
         <input type="checkbox" name="ticket" id="Annual-Foreign" value="Annual-Foreign">Annual pass foreign-->
-<label for="">Choose your ticket type</label>
-<select name="" id="ticket">
-  <option value="" id="blank"></option>
+<label for="choosingthetickettype">Choose your ticket type</label>
+<select  id="ticket">
+  <option  id="blank"></option>
 
   <option value="local-adult" id="local-adult">Local adult</option>
   <option value="Foreign-adult" id="Foreign-adult">Foreign adult</option>
@@ -67,7 +67,7 @@
         <input type="checkbox" name="duration" id="half-a-day" value="half-a-day">half-a-day
         <input type="checkbox" name="duration" id="one-day" value="one-day">one-day
         <input type="checkbox" name="duration" id="two-days" value="two-days">two-days-->
-<label for="">Duration </label>
+<label for="duration">Duration </label>
 
         <select name="" id="duration">
           <option value="" id="blanktwo"></option>
@@ -85,13 +85,13 @@
 
 
      
-<label for="">Input number of tickets</label>
+<label for="numberoftickets">Input number of tickets</label>
 <input type="number" name="quantity" id="quantity-tickets" min="1" value="">
 
 
 
 
-<label for="">number of food tokens</label>
+<label for="numberoffoodtokens">number of food tokens</label>
 <input type="number" id="foodtokenquantity" value="" min="1">
 
 
