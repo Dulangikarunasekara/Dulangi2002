@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport"  initial-scale="1" width="500px">
+  <meta name="viewport" width="500px" initial-scale="1">
   <meta name="description" content="website about sri lanka">
   
   
@@ -31,7 +31,7 @@
         <input type="checkbox" name="ticket" id="Annual-Foreign" value="Annual-Foreign">Annual pass foreign-->
 <label for="choosingthetickettype">Choose your ticket type</label>
 <select  id="ticket">
-  <option  id="blank"></option>
+  <option  id="blank" label="optionsfortickettype"></option>
 
   <option value="local-adult" id="local-adult">Local adult</option>
   <option value="Foreign-adult" id="Foreign-adult">Foreign adult</option>
@@ -69,7 +69,7 @@
         <input type="checkbox" name="duration" id="two-days" value="two-days">two-days-->
 <label for="duration">Duration </label>
 
-        <select name="" id="duration">
+        <select  id="duration">
           <option value="" id="blanktwo"></option>
           <option value="three-hours">3 Three hours</option>
           <option value="half-a-day">half a day</option>
@@ -134,11 +134,12 @@
 </p>
 -->
 <table id="overallorder">
-
+<tr>
   <th>qauntity</th>
   <th>type</th>
   <th >duration</th>
   <th>Price</th>
+</tr>
   <tr>
     <td id="quantity2"></td>
     <td id="type2"></td>
@@ -172,9 +173,11 @@
 
 
 <table id="foodtokentable">
+  <tr>
   <th>number of food tokens</th>
   <th>Price of the food tokens</th>
   <th>overall cost including the food tokens</th>
+  </tr>
   <tr>
   <td id="purchasedfoodtokenquantity"></td>
   <td id="priceofthepurchasedfoodtokens"></td>
