@@ -126,8 +126,8 @@ orderfavouritebtn.addEventListener("click", orderfavourite);
 function addtofavourites(){
     localStorage.setItem('favourites' , JSON.stringify( txtnewquantity.innerText + '  '+ txtnewtype.innerText  +  ' '  + txtnewduration.innerText + ' ' + txtnewprice.innerText));
     localStorage.setItem('favourite type' ,JSON.stringify(txtnewtype.innerText));
-    localStorage.setItem('favourite quantity' , JSON.stringify(txtnewquantity.innerText));
-    localStorage.setItem('favourite duration', JSON.stringify(txtnewduration.innerText));
+    localStorage.setItem('favourite quantity' , JSON.stringify(txtnewduration.innerText));
+    localStorage.setItem('favourite duration', JSON.stringify(txtnewquantity.innerText));
     localStorage.setItem('favourite price' ,JSON.stringify(txtnewprice.innerText));
 
 
@@ -144,6 +144,8 @@ orderfavouritebtn.addEventListener("click", (evt)=>{
     document.getElementById("duraton2").innerText += JSON.parse(localStorage.getItem('favourite duration'));
     document.getElementById("price2").innerText += JSON.parse(localStorage.getItem('favourite price'));
     console.log("fsdfs");
+    
+    document.getElementById("overallquantity").innerText =parseInt(JSON.parse(localStorage.getItem('favourite quantity'))) ;
 
 
     
@@ -177,6 +179,8 @@ function updateprice(){
 addtocartbtn.addEventListener("click", (evt)=>{
     evt.preventDefault();
 
+
+
    
 
 
@@ -192,8 +196,8 @@ addtocartbtn.addEventListener("click", (evt)=>{
     document.getElementById("cart").innerText =   document.getElementById("cart").innerText +'\n\n' + "order :\xa0\xa0 " + '\n' + `${numtickets}\xa0\xa0\xa0\xa0` + `${ticketchoices.value}` + "\xa0\xa0\xa0tickets " +  '\xa0\xa0\xa0' + '\n\ ' + "duration :" + '\xa0\xa0' + `${durationchoice.value}`+ ' \n' + "price:" + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0' +`${txtcurrentcost}`;
     document.getElementById("quantity2").innerText =  document.getElementById("quantity2").innerText + `\n ${numtickets}` ;
     document.getElementById("type2").innerText = document.getElementById("type2").innerText + `\n${ticketchoices.value}`;
-    document.getElementById("duraton2").innerText = document.getElementById("duraton2").innerText + `${durationchoice.value}`;
-    document.getElementById("price2").innerText = document.getElementById("price2").innerText +`${txtcurrentcost}` ;
+    document.getElementById("duraton2").innerText = document.getElementById("duraton2").innerText + `\n ${durationchoice.value}`;
+    document.getElementById("price2").innerText = document.getElementById("price2").innerText +`\n${txtcurrentcost}` ;
      
 
     document.getElementById("updatetype").innerText = '';
@@ -208,14 +212,15 @@ addtocartbtn.addEventListener("click", (evt)=>{
     overallcost += addcost;
     console.log(overallcost);
     document.getElementById("overallcost").innerText = overallcost;
-    overallquantity += addthistoquantity;
+    //overallquantity += addthistoquantity;
+    overallquantity = overallquantity + addthistoquantity + parseInt(JSON.parse(localStorage.getItem('favourite quantity')));
     document.getElementById("overallquantity").innerText = overallquantity;
     let numberoffoodtokenspurchased = txttoken.value;
     let foodprice = numberoffoodtokenspurchased * 500.00;
     document.getElementById("purchasedfoodtokenquantity").innerText = numberoffoodtokenspurchased;
     document.getElementById("priceofthepurchasedfoodtokens").innerText = foodprice;
     document.getElementById("overallcostincludingfoodtokens").innerText = foodprice + overallcost;
-    console.log("dhanish");
+   
 
   
 
