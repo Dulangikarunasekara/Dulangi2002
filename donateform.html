@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>tickets</title>
+<link rel="stylesheet" href="donateform.css">
+
+    
+</head>
+
+<body>
+    <div id="form-container">
+        <form id="form"> 
+
+            <h1 id="form-title">Donate</h1>
+            
+            
+            <label > first name</label>
+            <input type="text" id="f-name" pattern="[a-zA-Z]{3,}" title="Please enter a valid First Name" required>
+            
+            
+            
+            
+            <label >Last name</label>
+            <input type="text" id="L-name" pattern="[a-zA-Z]{3,}" title="Please enter a valid Last Name" required>
+            
+            
+            
+            <div id="radio">
+            
+            <label for="visa">Visa</label>
+            <input type="radio" id="visa" name="radio" value="visa">
+            
+            <label for="mastercard">Mastercard</label>
+            <input type="radio" id="mastercard" name="radio" value="mastercard">
+            </div>
+
+
+            <label for="donate-amount">Donation Amount</label>
+
+            <select name="donate-amount" id="donate-amount" required>
+                <option value="">Please Select</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+                <option value="2500">2500</option>
+                <option value="5000">5000</option>
+                <option value="10000">10000</option>
+                
+            </select>
+            
+              
+            
+            
+            
+                    
+            
+                 
+                  
+            
+            <label for="" id="c-name">name on card</label>
+            <input type="text" id="c-name">
+            
+            <label for="" id="c-number">Card number</label>
+            <input type="number" id="c-number" maxlength="16"  placeholder="xxxx-xxxx-xxxx-xxxx">
+            
+            
+            <label for="" id="expdate">Expiration date</label>
+            <input type="number" id="expdate">
+            
+            <label for="" id="cvv"  >cvv</label>
+            <input type="number" id="cvv" pattern="[0-9]{3}" maxlength="3" placeholder="xxx">
+            
+            <button id="submit" type="submit">submit</button>
+            
+            
+            </form>
+
+            <div id="popup" >
+                    <h1>Thank you</h1>
+                    <p id="msg-area"></p>
+                    <button id="okbtn">OK</button>
+                
+            </div>
+    </div>
+
+
+
+
+
+
+    
+    
+</body>
+<script src="donateform.js"></script>
+</html>
