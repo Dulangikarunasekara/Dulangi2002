@@ -144,7 +144,12 @@ orderfavouritebtn.addEventListener("click", (evt)=>{
     document.getElementById("duraton2").innerText += `\n${JSON.parse(localStorage.getItem('favourite duration'))}`;
     document.getElementById("price2").innerText += `\n${JSON.parse(localStorage.getItem('favourite price'))}`;
     console.log("fsdfs");
-    //overallquantity = overallquantity + addthistoquantity + parseInt(JSON.parse(localStorage.getItem('favourite quantity')));
+
+    //comment this out
+    document.getElementById("overallquantity").innerText = overallquantity;
+    overallquantity =  parseInt(JSON.parse(localStorage.getItem('favourite quantity')));
+    //comment this out
+    document.getElementById("overallquantity").innerText = overallquantity;
     
     //document.getElementById("overallquantity").innerText += parseInt(JSON.parse(localStorage.getItem('favourite quantity'))) ;
     //overallquantity +=parseInt(JSON.parse(localStorage.getItem('favourite quantity')))
@@ -154,6 +159,24 @@ orderfavouritebtn.addEventListener("click", (evt)=>{
 
 }
 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -235,7 +258,7 @@ addtocartbtn.addEventListener("click", (evt)=>{
     document.getElementById("updateprice").innerText = '';
     durationchoice.value= document.getElementById("blanktwo").value;
     ticketchoices.value = document.getElementById("blank").value;
-    txtnumtickets.value = 0;
+    txtnumtickets.value = '';
 
 
     overallcost += addcost;
