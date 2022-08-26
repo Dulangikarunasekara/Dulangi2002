@@ -30,7 +30,7 @@
         <input type="checkbox" name="ticket" id="Annual-local" value="Annual-local">Annual pass local
         <input type="checkbox" name="ticket" id="Annual-Foreign" value="Annual-Foreign">Annual pass foreign-->
 <label for="choosingthetickettype">Choose your ticket type</label>
-<select  id="ticket">
+<select  id="ticket" required>
   <option  id="blank"></option>
 
   <option value="local-adult" id="local-adult">Local adult</option>
@@ -69,7 +69,7 @@
         <input type="checkbox" name="duration" id="two-days" value="two-days">two-days-->
 <label for="duration">Duration </label>
 
-        <select  id="duration">
+        <select  id="duration" required>
           <option value="" id="blanktwo"></option>
           <option value="three-hours">3 Three hours</option>
           <option value="half-a-day">half a day</option>
@@ -86,9 +86,9 @@
 
      
 <label for="numberoftickets">Input number of tickets</label>
-<input type="number" name="quantity" id="quantity-tickets" min="1" value="">
+<input type="number" name="quantity" id="quantity-tickets" min="1" value="" required>
 
-
+<p id="error"></p>
 
 
 <label for="numberoffoodtokens">number of food tokens</label>

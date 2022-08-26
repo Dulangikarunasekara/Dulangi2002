@@ -138,14 +138,16 @@ function addtofavourites(){
 
 orderfavouritebtn.addEventListener("click", (evt)=>{
     evt.preventDefault();
-    document.getElementById("cart").innerText += JSON.parse(localStorage.getItem('favourites'));
-    document.getElementById("quantity2").innerText += JSON.parse(localStorage.getItem('favourite quantity'));
-    document.getElementById("type2").innerText += JSON.parse(localStorage.getItem('favourite type'));
-    document.getElementById("duraton2").innerText += JSON.parse(localStorage.getItem('favourite duration'));
-    document.getElementById("price2").innerText += JSON.parse(localStorage.getItem('favourite price'));
+    document.getElementById("cart").innerText += `\n ${JSON.parse(localStorage.getItem('favourites'))}`;
+    document.getElementById("quantity2").innerText += `\n${JSON.parse(localStorage.getItem('favourite quantity'))}`;
+    document.getElementById("type2").innerText += `\n${JSON.parse(localStorage.getItem('favourite type'))}`;
+    document.getElementById("duraton2").innerText += `\n${JSON.parse(localStorage.getItem('favourite duration'))}`;
+    document.getElementById("price2").innerText += `\n${JSON.parse(localStorage.getItem('favourite price'))}`;
     console.log("fsdfs");
+    //overallquantity = overallquantity + addthistoquantity + parseInt(JSON.parse(localStorage.getItem('favourite quantity')));
     
-    document.getElementById("overallquantity").innerText =parseInt(JSON.parse(localStorage.getItem('favourite quantity'))) ;
+    //document.getElementById("overallquantity").innerText += parseInt(JSON.parse(localStorage.getItem('favourite quantity'))) ;
+    //overallquantity +=parseInt(JSON.parse(localStorage.getItem('favourite quantity')))
 
 
     
@@ -176,8 +178,35 @@ function updateprice(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 addtocartbtn.addEventListener("click", (evt)=>{
     evt.preventDefault();
+
 
 
 
@@ -212,8 +241,8 @@ addtocartbtn.addEventListener("click", (evt)=>{
     overallcost += addcost;
     console.log(overallcost);
     document.getElementById("overallcost").innerText = overallcost;
-    //overallquantity += addthistoquantity;
-    overallquantity = overallquantity + addthistoquantity + parseInt(JSON.parse(localStorage.getItem('favourite quantity')));
+    overallquantity += addthistoquantity;
+    //overallquantity = overallquantity + addthistoquantity + parseInt(JSON.parse(localStorage.getItem('favourite quantity')));
     document.getElementById("overallquantity").innerText = overallquantity;
     let numberoffoodtokenspurchased = txttoken.value;
     let foodprice = numberoffoodtokenspurchased * 500.00;
@@ -225,7 +254,7 @@ addtocartbtn.addEventListener("click", (evt)=>{
   
 
   
-  
+
 
 
 });
